@@ -6,16 +6,24 @@
       dark
     >
       <div class="d-flex align-center">
- 
-
-        <v-img
-          alt="Vuetify Name"
+    <v-img
+          alt="极客游途"
           class="shrink mt-1 hidden-sm-and-down"
           contain
-          min-width="100"
-          src="./assets/phaser3-logo-nav.png"
-          width="100"
-        /><v-toolbar-title>极客中文站</v-toolbar-title>
+          min-width="38"
+          src="./assets/k15.png"
+            width="38"
+        />
+
+        <v-img
+          alt="极客游途"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="176"
+          src="./assets/jkyt-logo-nav.png"
+          width="40"
+        />
+        <v-toolbar-title></v-toolbar-title>
       </div>
 
       <v-spacer></v-spacer>
