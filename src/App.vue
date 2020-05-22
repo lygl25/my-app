@@ -1,18 +1,14 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-    <v-img
+        <v-img
           alt="极客游途"
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="38"
           src="./assets/k15.png"
-            width="38"
+          width="38"
         />
 
         <v-img
@@ -24,38 +20,35 @@
           width="40"
         />
         <v-toolbar-title></v-toolbar-title>
+           <v-btn href target="_blank" text>
+        <span class="mr-2">Phaser3教程</span>
+      </v-btn>
+      
       </div>
 
       <v-spacer></v-spacer>
 
-      <!-- <v-btn
-        href=""
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Phaser3例子</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn> -->
+   
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <HelloWorld />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    HelloWorld
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
