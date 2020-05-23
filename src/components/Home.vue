@@ -1,4 +1,5 @@
 <template>
+   <v-content>
   <v-container>
     <v-row class="text-center">
       <v-col cols="12" align="center">
@@ -67,11 +68,12 @@
       </v-col>
     </v-row>
   </v-container>
+   </v-content>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Home",
 
   data: () => ({
     importantLinks: [

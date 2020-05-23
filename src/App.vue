@@ -1,50 +1,23 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="极客游途"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="38"
-          src="./assets/k15.png"
-          width="38"
-        />
-
-        <v-img
-          alt="极客游途"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="176"
-          src="./assets/jkyt-logo-nav.png"
-          width="40"
-        />
-        <v-toolbar-title></v-toolbar-title>
-           <v-btn href target="_blank" text>
-        <span class="mr-2">Phaser3教程</span>
-      </v-btn>
-      
-      </div>
-
-      <v-spacer></v-spacer>
-
-   
-    </v-app-bar>
-
-    <v-content>
-      <HelloWorld />
-    </v-content>
+    <AppBar />
+ 
+     <router-view></router-view>
   </v-app>
+
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+
+import AppBar from "./components/core/AppBar";
+
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld
+
+    AppBar
   },
 
   data: () => ({
