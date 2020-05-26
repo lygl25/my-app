@@ -5,27 +5,36 @@
         v-model="drawer"
         :clipped="$vuetify.breakpoint.lgAndUp"
         app
-        width="320"
+        width="350"
       >
         <v-list >
+          <v-list-item-group   v-model="model"   >
           <template v-for="(directory,x) in directory" :key1="x">
+            <!-- :prepend-icon="directory.icon"  这个是目录前面的图标属性-->
             <v-list-group
+              sub-group
               :key="directory.text"
-              :prepend-icon="directory.icon"
               value="true"
+           
             >
               <template v-slot:activator> 
               <v-list-item-title  >{{ directory.text }}</v-list-item-title> 
               </template>
+             
+              
               <v-list-item link v-for="(crud, i) in directory.children" :key="i"  v-on:click="content(x+directory.text+i+crud.text)" > 
                 <v-list-item-action> </v-list-item-action>
                
                 <v-list-item-title v-text="crud.text" ></v-list-item-title>
                
               </v-list-item>
+               
+            
             </v-list-group>
           </template>
+            </v-list-item-group>
         </v-list>
+ 
       </v-navigation-drawer>
     </v-card>
 
