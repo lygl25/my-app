@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary" dark flat  clipped-left>
+  <v-app-bar app color="primary" dark flat clipped-left clipped-right >
     <div class="d-flex">
       <v-img
         alt="极客游途"

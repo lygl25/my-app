@@ -13,4 +13,4 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-console.log(store.state.tutorialContent)
+
