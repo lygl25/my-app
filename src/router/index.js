@@ -18,7 +18,7 @@ export default new Router({
         path: '/phaser3Tutorial',
         component: Phaser3Tutorial,
         children:[
-        {path: 'TutorialContent',
+        {path: 'TutorialContent/:id',
           component:TutorialContent
         }]
       },
