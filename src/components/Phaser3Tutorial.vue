@@ -20,7 +20,7 @@
                   link
                   v-for="(crud, i) in directory.children"
                   :key="i"
-                  v-on:click="content(directory.text, crud.text)"
+                  v-on:click="content(directory.text, crud.text,crud.articleContent)"
                 >
                   <v-list-item-action> </v-list-item-action>
 
@@ -53,7 +53,7 @@
 <script>
 import TutorialContent from "./base/TutorialContent";
 import directory from "../unit/directory";
-import articleContents from "../unit/articleContent";
+
 export default {
   props: {
     source: String,
@@ -62,18 +62,14 @@ export default {
     TutorialContent,
   },
   methods: {
-    content: function(directory, crud) {
+    content: function(directory, crud,articleContent ) {
       var data = {
         directory: directory,
         crud: crud,
+        articleContent:articleContent 
       };
       this.$store.commit("upTutoriaContent", data);
-      for (const value of articleContents) {
-        if (directory == value.directory && crud == value.crud) {
-          this.$store.commit("upArticleContent", value.text);
-          return;
-        }
-      }
+    
     },
   },
   data: () => ({
