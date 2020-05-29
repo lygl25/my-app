@@ -1,12 +1,7 @@
 <template>
   <v-app id="inspire">
     <v-card class="mx-auto">
-      <v-navigation-drawer
-     
-        clipped
-        app
-        width="350"
-      >
+      <v-navigation-drawer clipped app width="350">
         <v-list>
           <v-list-item-group>
             <template v-for="(directory, x) in directory" :key1="x">
@@ -15,19 +10,16 @@
                 <template v-slot:activator>
                   <v-list-item-title>{{ directory.text }}</v-list-item-title>
                 </template>
-              
-                <v-list-item
-                  link
-                   v-for="(crud, i) in directory.children"
+                <router-link
+                  :to="`/phaser3Tutorial/TutorialContent/${crud.id}`"
+                  v-for="(crud, i) in directory.children"
                   :key="i"
                 >
-                  <v-list-item-action> </v-list-item-action>
-                     <router-link :to="`/phaser3Tutorial/TutorialContent/${crud.id}`" >
-                  <v-list-item-title v-text="crud.text"></v-list-item-title>
-                  </router-link>
-                </v-list-item>
-             
-              
+                  <v-list-item link>
+                    <v-list-item-action> </v-list-item-action>
+                    <v-list-item-title v-text="crud.text"></v-list-item-title>
+                  </v-list-item>
+                </router-link>
               </v-list-group>
             </template>
           </v-list-item-group>
@@ -35,39 +27,26 @@
       </v-navigation-drawer>
     </v-card>
 
-      <v-content class="pa-0 mt-10">
+    <v-content class="pa-0 mt-10">
       <keep-alive>
-      <router-view></router-view>
-        </keep-alive>
-  </v-content>
-    <v-navigation-drawer
-  
-     clipped
-      right
-        app
-        width="250"
-        class="d-block"
-    >
-    google广告
+        <router-view></router-view>
+      </keep-alive>
+    </v-content>
+    <v-navigation-drawer clipped right app width="250" class="d-block">
+      google广告
     </v-navigation-drawer>
-
   </v-app>
 </template>
 
 <script>
-
 import directory from "../unit/directory";
 
 export default {
   props: {
     source: String,
   },
-  components: {
- 
-  },
-  methods: {
-
-  },
+  components: {},
+  methods: {},
   data: () => ({
     dialog: false,
     drawer: null,
@@ -75,3 +54,11 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+
+
+a {
+  text-decoration: none;
+}
+</style>>
