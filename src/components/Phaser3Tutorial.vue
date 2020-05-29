@@ -15,7 +15,7 @@
                   v-for="(crud, i) in directory.children"
                   :key="i"
                 >
-                  <v-list-item link>
+                  <v-list-item link v-on:click="getContent(crud.id)">
                     <v-list-item-action> </v-list-item-action>
                     <v-list-item-title v-text="crud.text"></v-list-item-title>
                   </v-list-item>
@@ -39,14 +39,23 @@
 </template>
 
 <script>
-import directory from "../unit/directory";
+import directory from "../unit/directory";//教程目录结构
 
 export default {
   props: {
     source: String,
   },
   components: {},
-  methods: {},
+  methods: {
+      getContent:function(id){
+           //根据文章id 异步加载文章内容
+    this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
+    console.log(id)
+    this.$store.commit('upTutoriaContent',this.htmlMD)
+         
+      }
+
+  },
   data: () => ({
     dialog: false,
     drawer: null,

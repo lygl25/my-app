@@ -5,9 +5,8 @@
 const mutations = {
     //目录章节
     upTutoriaContent(state,data) {
-        state.articleList.directory = data.directory
-        state.articleList.crud=data.crud
-        state.articleContent = data.articleContent
+
+        state.articleContent = data
       }
   
 }
