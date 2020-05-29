@@ -9,7 +9,7 @@
         <!-- 文章内容 -->
       
         <p class="title"> {{$store.state.articleContent}}</p>
-  
+      <div v-html="md"></div>
       </v-container>
      </v-responsive>
     </v-content>
@@ -17,10 +17,10 @@
 </template>
 
 <script>  
-
+import demo from "../../assets/demo.md";
 export default {
     data: () => ({
-    
+    md:demo
 
   }),
    computed: {
