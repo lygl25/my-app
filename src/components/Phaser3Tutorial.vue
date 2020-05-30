@@ -49,9 +49,11 @@ export default {
   methods: {
       getContent:function(id){
            //根据文章id 异步加载文章内容
-    this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
+  
+   this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
     console.log(id)
     this.$store.commit('upTutoriaContent',this.htmlMD)
+
          
       }
 
