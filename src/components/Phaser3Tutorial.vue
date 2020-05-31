@@ -51,7 +51,7 @@ export default {
            //根据文章id 异步加载文章内容
   
    this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
-    console.log(id)
+    console.log(this.htmlMD)
     this.$store.commit('upTutoriaContent',this.htmlMD)
 
          
@@ -66,10 +66,15 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style >
+ code{
+  width: 100%;
+  color: #363535;
+}
 
 a {
   text-decoration: none;
 }
+
+
 </style>>
