@@ -69,7 +69,10 @@ export default {
 <style >
  code{
   width: 100%;
-  color: #363535;
+
+}
+pre{
+
 }
 
 a {

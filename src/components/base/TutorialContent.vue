@@ -8,7 +8,7 @@
         <!-- 文章内容 -->
          <!-- <p class="title">{{$route.params.id}}</p> -->
         <!-- <p class="title"> {{$store.state.articleContent}}</p> -->
-         <div v-html="$store.state.articleContent"></div>
+         <div v-html="$store.state.articleContent" v-highlight></div>
       </v-container>
      </v-responsive>
     </v-content>
