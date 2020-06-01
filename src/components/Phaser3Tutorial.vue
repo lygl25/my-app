@@ -15,7 +15,7 @@
                   v-for="(crud, i) in directory.children"
                   :key="i"
                 >
-                  <v-list-item link v-on:click="getContent(crud.id)">
+                  <v-list-item link v-on:click="pushShow(crud.id)">
                     <v-list-item-action> </v-list-item-action>
                     <v-list-item-title v-text="crud.text"></v-list-item-title>
                   </v-list-item>
@@ -47,16 +47,24 @@ export default {
   },
   components: {},
   methods: {
-      getContent:function(id){
+      pushShow:function(id){
            //根据文章id 异步加载文章内容
-  
-   this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
-    console.log(this.htmlMD)
-    this.$store.commit('upTutoriaContent',this.htmlMD)
+    this.$router.push(`/phaser3Tutorial/TutorialContent/${id}`)//路由后退的方式
+  // this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
+    //this.$store.commit('upTutoriaContent',this.htmlMD)
 
          
       }
 
+  },
+  watch:{
+    $route:function (v) {
+      //地址发生改变就重新获取MD文件，修改显示的文章内容
+        var id=v.params.id
+            console.log(id)
+         this.htmlMD = require('../assets/articleContent/'+id+'.md');//获取保存在md文件的教程
+         this.$store.commit('upTutoriaContent',this.htmlMD)//修改文章内容
+    }
   },
   data: () => ({
     dialog: false,
@@ -71,9 +79,7 @@ export default {
   width: 100%;
 
 }
-pre{
 
-}
 
 a {
   text-decoration: none;
