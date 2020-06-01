@@ -1,0 +1,13 @@
+# 现代的JavaScript
+
+在不久以前的世界中，没有大量工具和库就无法使用现代JavaScript。
+初学者很喜欢学习传统的JavaScript，但事实已不再如此。
+ModernJavaScript更易于理解和学习。 它也更符合专业
+部分开发人员编写软件。
+这就是为什么我们在本书中将使用现代JavaScript。
+包含Phaser作为全局含义，您可以在代码中访问window.Phaser。 这很容易
+短暂但不建议在现代JavaScript中使用。
+也不会删除VSCodegiveus智能代码完成。 优质的计算机
+如果他们不能帮助我们？
+我们将使用现代JavaScript来做与Phaser3兼容的第二件事并获取完整的VSCode
+智能感知。

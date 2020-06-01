@@ -1,2 +1,0 @@
-const content="<p>Phaser3是一个非常棒的游戏框架，对于初学者来说，它非常简单，但是功能强大</p><p>够你想象的了。</p><p>网络和现代Javascript是理想的平台和语言的创造者。</p><p>Unity不是。我试着教初学者Unity。这个软件像飞机一样吓人</p><p>仪表板。你认为一个集成的开发环境只会起作用，但不会。</p><p>在这本书中你只需要Visual Studio代码、Chrome浏览器和一个Internet连接-</p><p>、"
-export default content
