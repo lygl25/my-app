@@ -7,7 +7,7 @@ const directory=[
       children: [
         { id:"0_Introduction",text: "为什么是Web而不是Unity？" },
         { id:"1_WhyModernJavaScript",text: "为什么使用现代JavaScript" },
-        { id:"2_HowtoUsethisBook",text: "如何使用这本书" },
+        { id:"2_HowtoUsethisBook",text: "如何使用这本书？" },
       ],
     },
     {
