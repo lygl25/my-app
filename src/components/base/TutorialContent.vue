@@ -17,6 +17,7 @@
 
 <script>  
 //import demo from "../../assets/articleContent/1.md";
+
 export default {
     data: () => ({
     articleContent:""
@@ -28,3 +29,6 @@ export default {
   }
 
 </script>
+
+<style>
+</style>>
