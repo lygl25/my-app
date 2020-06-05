@@ -33,6 +33,12 @@
         <span class="ml-1">Phaser3教程</span>
       </v-btn>
     </router-link>
+     <router-link to="/zt">
+      <v-btn href target="_blank" text class="ml-12">
+        <v-icon>mdi-cloud-download</v-icon>
+        <span class="ml-1">征途2辅助下载</span>
+      </v-btn>
+    </router-link>
   </v-app-bar>
 </template>>
 
