@@ -1,12 +1,23 @@
 <template>
       <blockquote class="blockquote"  >
       <div style="width:1014px;margin:auto" >
-  <p>无需注册,每天可免费试用6次 (开卡可送征途2专用虚拟机)</p>
-   <h1> <a href="http://jikeyt.com/download/征途2猎豹辅助.rar">征途2辅助下载 &nbsp;   <v-icon>mdi-cloud-download</v-icon></a> </h1><br>
-   <p>2020年6月4日更新v5.35 解决征途2经典版游戏更新导致不能从桃花源到王城的问题<p>
-     <h1> <a href="http://jikeyt.com/download/征途2辅助使用说明.rar">使用教程下载   <v-icon>mdi-cloud-download</v-icon></a></h1>
+
+
+      <a href="http://jikeyt.com/download/征途2猎豹辅助.rar">  <h1> 征途2辅助 <em>点击下载</em> <v-icon>mdi-cloud-download</v-icon></h1></a> 
+        <p><strong>支持试用</strong>，下载即可免费试用(开卡可送征途2专用虚拟机)  </p> 
+ 
+         <a class="mr-12" href="http://jikeyt.com/download/征途2辅助使用说明.rar" >使用教程<em>(点击下载)</em>   <v-icon>mdi-file-download</v-icon> </a> 
+        <a href="https://pan.baidu.com/s/1qWDMRYO#list/path=%2F" target="_blank">用户常见问题解决视频  <v-icon>mdi-account-question</v-icon> </a> 
+        <a class="ml-12" href="#problem">常见问题解答 <v-icon>mdi-help-rhombus</v-icon></a> <br>   
+   
+  
+
+    
      <br>
-    <a href="https://pan.baidu.com/s/1qWDMRYO#list/path=%2F">用户常见问题解决视频  <v-icon>mdi-cloud-download</v-icon> </a>  <br> <br>
+   
+    
+    <h2>更新日志:</h2>
+     <p>2020年6月4日更新v5.35 解决征途2经典版游戏更新导致不能从桃花源到王城的问题</p>
      <h2>注意事项:</h2>
      <p>1.特别重要！
 单开的时候如果游戏已经打开，要把鼠标放在游戏画面再按F10启动或者点击启动按钮后马上点击游戏窗口。保证游戏窗口是激活，标题栏不能是灰色的。多开可以任意启动<p> <br>
@@ -18,11 +29,11 @@
 <p>7.游戏分辨率 1024*768.,色彩32位.窗口模式 刷新速度:快,必须使用完整版客户端，不能使用微端</p><br><br>
 
  
-<h1>常见问题解答</h1>
-单开特别提醒！很重要！<br>
+<h2 id="problem">常见问题解答</h2>
+<p>单开特别提醒！很重要！<br>
  单开的时候如果游戏已经打开，要把鼠标放在游戏窗口再按F10启动或者点击启动按钮后马上点击游戏窗口。保证游戏窗口是激活，标题栏不能是灰色的。多开可以任意启动<br><br>
   很重要! 如果您使用中是出现问题,例如人物不动,不过边或其它不正常,请先把电脑外观改成WINDOWS经典样式,然后关掉游戏,再重新启动辅助(不懂怎么改可以百度搜索"改成windows经典样")<br><br><br>
-问:我打开辅助设置界面都是空白的?<br>
+问:我打开辅助设置界面都是空白的?</p><br>
  答:有4个方法解决.第一个最简单的方法,关掉辅助重新再开就会显示了.第二,辅助不要安装在桌面,或者辅助软件所有的文件都要放在一个文件夹下面.第三,也有可能是你杀毒或安全软件阻止了,请关掉杀毒再开辅助,第四.把辅助软件目录下面的所有OCX的文件都复制到C盘WINDOWS目录下面<br><br><br>
 问：为什么我游戏每次换地图之后游戏分辨率就变到最大呢？<br>
  答：你手动到游戏里面把游戏改成 1024*768 窗口模式 ，然后关掉游戏重新开，以后就不会再变了<br><br><br>
@@ -118,7 +129,7 @@ C:\rwxzt\plugin\zt 目录下面入，这样就可以了。<br>
 1-10个"点击自定义1.bmp""点击自定义2.bmp""点击自定义3.bmp"一直到"点击自定义10.bmp"<br>
 的10个自定义点击位置的图片。<br>
 
-
+<a href="#">回到顶部</a>
     </div>
     </blockquote>
 
