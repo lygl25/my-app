@@ -30,7 +30,7 @@ Jumper Pack
 
 
 
-# 创建一个Phaser游戏
+## 创建一个Phaser游戏
 
 接下来，我们将在main.js文件中创建一个Phaser.Game实例。
 Phaser.Game带有一个配置对象，该对象定义了诸如游戏的宽度和高度之类的设置。

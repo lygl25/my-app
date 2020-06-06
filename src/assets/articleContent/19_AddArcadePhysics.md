@@ -42,7 +42,7 @@ this.add.image(240, 320, 'platform')
 
 平台大小现在看起来更加合适。 接下来，让我们添加一些物理属性！
 
-# 添加街机物理
+## 添加街机物理
 
 Phaser有一些物理选择。 我们将使用Arcade Physics使事情变得简单。 我们需要做的第一件事就是在游戏的配置中启用Arcade Physics。
 让我们这样更新main.js：
