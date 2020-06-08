@@ -100,20 +100,20 @@ const directory=[
     },
     {
       icon: "mdi-numeric-8-box-multiple",
-      text: "处理游戏超过",
+      text: "处理游戏结束",
       model: false,
       children: [
-        { id:"undefined",text: "Scene52上的游戏" },
-        { id:"undefined",text: "添加再次播放" },
-        { id:"undefined",text: "初始化场景属性" },
+        { id:"39_GameOverScene",text: "游戏结束场景" },
+        { id:"40_AddPlayAgain",text: "重新开始游戏" },
+        { id:"41_InitializingScene",text: "初始化场景属性" },
       ],
     },
     {
       icon: "mdi-numeric-9-box-multiple",
-      text: "简单的动画与跳转纹理",
+      text: "具有跳跃纹理的简单动画",
       model: false,
-      children: [{ id:"undefined",text: "切换回Stand" },
-                 { id:"undefined",text: "还有一件事…" }],
+      children: [{ id:"42_SwitchBackToStand",text: "切切换回原位" },
+                 { id:"43_JustOneMoreThing",text: "还有一件事…" }],
     },
   ]
 

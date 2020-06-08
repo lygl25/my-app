@@ -203,7 +203,7 @@
   </blockquote>
 </template>
 
-<style >
+<style scoped >
 div > a:hover{
   color:red;
 
