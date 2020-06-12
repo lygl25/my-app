@@ -1,14 +1,15 @@
 <template>
+  
   <blockquote class="blockquote">
     <div style="width:1014px;margin:auto">
       <v-card
-        class="mx-auto ma-2 pa-6 mt-10 pb-0"
-        max-width="900"
+        class=" ma-2 pa-6 mt-10 pb-0"
         elevation="3"
         outlined
       >
+    
         <h1 class="display-1">
-          征途2猎豹辅助 <em class="subtitle-1">v5.35</em>
+          征途2猎豹辅助   <i class="fab fa-vimeo-v"></i><em class="subtitle-1">5.35</em>
         </h1>
 
         <div class="my-2">
@@ -28,7 +29,7 @@
             下载即可免费试用 (开卡送征途2专用虚拟机)
           </strong>
         </div>
-        <div class="pa-0 mt-6">
+        <div class="pa-0 mt-3">
         <a class="mr-12" href="http://jikeyt.com/download/征途2辅助使用说明.rar"
           >使用教程<em>(点击下载)</em> <v-icon>mdi-file-download</v-icon>
         </a>
@@ -49,7 +50,7 @@
         2020年6月4日更新v5.35
         解决征途2经典版游戏更新导致不能从桃花源到王城的问题
       </p>
-      <h2>注意事项:</h2>
+      <h2><i class="fas baby-carriage"></i>注意事项:</h2>
       <p>
         1.特别重要！
         单开的时候如果游戏已经打开，要把鼠标放在游戏画面再按F10启动或者点击启动按钮后马上点击游戏窗口。保证游戏窗口是激活，标题栏不能是灰色的。多开可以任意启动
@@ -84,7 +85,7 @@
       </p>
       <br /><br />
 
-      <h2 id="problem">常见问题解答</h2>
+      <h2 id="problem"><i class="iconfont" >&#xe669;</i>常见问题解答</h2>
       <p>
         单开特别提醒！很重要！<br />
         单开的时候如果游戏已经打开，要把鼠标放在游戏窗口再按F10启动或者点击启动按钮后马上点击游戏窗口。保证游戏窗口是激活，标题栏不能是灰色的。多开可以任意启动<br /><br />
@@ -203,6 +204,9 @@
   </blockquote>
 </template>
 
+<style src="../assets/icons/fa/css/all.css"></style>
+<style src="../assets/icons/ali/iconfont.css"></style>
+
 <style scoped >
 div > a:hover{
   color:red;
@@ -213,4 +217,14 @@ div > a:active{
   color:yellow;
 
 }
-</style>>
+
+i{
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+i.iconfont{
+  font-size: 24px;
+  margin-right: 4px;
+}
+</style>
