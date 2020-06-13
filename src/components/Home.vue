@@ -1,26 +1,25 @@
-<template>
-  <v-content>
-    <v-container>
+<template >
+    <v-container class="pt-10" >
       <v-row class="text-center">
         <v-col cols="12" align="center">
           <p class="subheading font-weight-regular">
             jikeyt.com本站镜像了Phaser3官方的示例程序、API文档实现在国内的快速访问，
-          
             <br />
             还有    <router-link to="/phaser3Tutorial">Phaser3中文教程  </router-link>，方便国内Phaser爱好者快速查阅与学习Phaser3，并支持您提交HTML5小游戏在本站展示
           </p>
-          <v-img
-            :src="require('../assets/logo.png')"
-            class="my-3"
-            contain
-            height="545"
-            width="635"
-          />
-        </v-col>
+      
+       <csscube />
+       
+       </v-col>
 
         <v-col class="mb-4">
           <h1 class="display-2 font-weight-bold mb-3">Phaser3 国内镜像站</h1>
-
+                <v-img
+            :src="require('../assets/logo.png')"
+            class="my-3"
+            contain
+            height="200"
+          />
           <p class="subheading font-weight-regular">
             Phaser是一个快速，免费且有趣的开源HTML5游戏框架，可在台式机和移动Web浏览器上提供WebGL和Canvas渲染,
             <br />可以使用第三方工具将游戏编译为iOS，Android和本机应用程序。您可以使用JavaScript或TypeScript进行开发。
@@ -91,10 +90,13 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-content>
+
 </template>
 
 <script>
+
+import csscube from "./base/csscube/csscube"
+
 export default {
   name: "Home",
 
@@ -121,5 +123,12 @@ export default {
       },
     ],
   }),
+    components: {
+
+    csscube
+  }
+
+
+
 };
 </script>
