@@ -17,7 +17,7 @@
 8 /** @type {Phaser.Physics.Arcade.Sprite} */
 9 const carrot = this.carrots.get(sprite.x, y, 'carrot')
 10
-11 // set active and visible
+11 //设置为可见
 12 carrot.setActive(true)
 13 carrot.setVisible(true)
 14
@@ -25,7 +25,7 @@
 16
 17 carrot.body.setSize(carrot.width, carrot.height)
 18
-19 // make sure body is enabed in the physics world
+19 //确保身体在物理世界中启用
 20 this.physics.world.enable(carrot)
 21
 22 return carrot

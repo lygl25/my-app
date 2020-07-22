@@ -16,8 +16,7 @@
 10 }
 ```
 
-接下来，让我们添加一个addCarrotAbove（sprite）方法，该方法会将Carrot置于给定的上方
-雪碧。
+接下来，让我们添加一个addCarrotAbove（sprite）方法，该方法会将Carrot置于给定的上方精灵。
 出于上一章中提到的可重用代码的原因，我们使用了通用Sprite。
 horizontalWrap（sprite）。
 将其放在游戏场景的底部：
@@ -50,7 +49,7 @@ horizontalWrap（sprite）。
 更准确的公式是减去sprite.displayHeight的一半和胡萝卜的一半
 来自sprite.y的displayHeight。
 我们使用的简单得多的公式适用于该游戏。 如果尝试使用其他资产，则可能必须切换到更准确的版本。
-第一段代码是第16行，我们将物理主体的大小调整为胡萝卜的宽度和高度。
+第一段代码是第16行，我们将将物理主体大小设置为胡萝卜的宽高。
 在有无此行的情况下对其进行测试，以查看区别。 最后，当我们重用平台时，可以调用此方法：
 
 ```javascript

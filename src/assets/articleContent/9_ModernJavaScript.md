@@ -1,6 +1,6 @@
 # 现代的JavaScript
 
-在不久以前的世界中，没有大量工具和库就无法使用现代JavaScript。
+在不久以前，没有大量工具和库就无法使用现代JavaScript。
 初学者很喜欢学习传统的JavaScript，但事实已不再如此。
 ModernJavaScript更易于理解和学习。 它也更符合专业
 部分开发人员编写软件。

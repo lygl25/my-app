@@ -17,7 +17,7 @@
 3 /** @type {Phaser.Physics.Arcade.Sprite} */
 4 player
 5
-6 // constructor, preload ...
+6 // 构造函数，预加载... ...
 7
 8 create()
 9 {
@@ -41,7 +41,7 @@
 很酷的故事，但是……我们实际上并不在乎。
 我们之所以使用它，是因为VS Code使用它来提供有关属性和变量的类型信息。
 这使IntelliSense在我们使用player属性时可以继续提供帮助。它还可以帮助我们或阅读代码的其他人知道player是Phaser.Physics.Arcade.Sprite。
-在第4行之后，紧接着是玩家属性的声明，该属性将用作this.player。
+在第4行之后，紧接着是player属性的声明，该属性将用作this.player。
 
 您可以在create（）中看到我们已经从使用本地变量播放器更改为class属性这个玩家。
 确保注意this.physics.add.collider（）的更改。这是确保您关注的测试！
